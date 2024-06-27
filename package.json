@@ -1,0 +1,27 @@
+{
+    "name": "spl-token-register",
+    "version": "1.0.0",
+    "description": "SPL token register script",
+    "main": "index.ts",
+    "scripts": {
+        "start": "ts-node src/index.ts"
+    },
+    "keywords": [],
+    "author": "test",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "2.7.1",
+        "ts-node": "^10.8.0",
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "@metaplex-foundation/js": "^0.17.5",
+        "@solana/spl-token": "^0.4.0",
+        "@solana/web3.js": "^1.90.0",
+        "axios": "^1.3.2",
+        "bs58": "^5.0.0",
+        "dotenv": "^16.0.1",
+        "fs": "^0.0.1-security",
+        "https": "^1.0.0"
+    }
+}

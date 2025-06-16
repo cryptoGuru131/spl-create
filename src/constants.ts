@@ -14,8 +14,10 @@ export const TOKEN_NAME = "";
 export const TOKEN_SYMBOL = "";
 export const TOKEN_DESCRIPTION =
   "PHATBOT token";
-export const TOKEM_DECIMAL = 9;
-export const MINT_AMOUNT = 1_000_000; // total supply
+
+export const TOKEM_DECIMAL = 9; 
+export const MINT_AMOUNT = 1_000_000;
+
 
 export const NETWORK = isMainnet ? "mainnet-beta" : "devnet";
 export const MAINNET_BUNDLR: string = "https://node1.bundlr.network";

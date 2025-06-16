@@ -6,7 +6,7 @@ export const SWRD_TOKEN_MINT = new PublicKey(
     ? ""
     : ""
 );
-export const CREATE_TOKEN_FLAG = true; // true -> create new token, false -> use above token
+export const CREATE_TOKEN_FLAG = true; 
 
 export const IMG_NAME = "logo.png";
 export const IMG_PATH = `assets/${IMG_NAME}`;

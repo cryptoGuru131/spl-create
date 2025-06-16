@@ -16,7 +16,7 @@ export const TOKEN_DESCRIPTION =
   "PHATBOT token";
 
 export const TOKEM_DECIMAL = 9; 
-export const MINT_AMOUNT = 1_000_000;
+export const MINT_AMOUNT = 10_000_000;
 
 
 export const NETWORK = isMainnet ? "mainnet-beta" : "devnet";

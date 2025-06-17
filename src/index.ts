@@ -58,7 +58,7 @@ let mintKey: PublicKey;
 const createToken = async () => {
   let mintKeypair = Keypair.generate();
   mintKey = mintKeypair.publicKey;
-  let contract_wallet = new PublicKey("FMRrXjgiW9PJiFwQK2kHcUrt4MTbmQ116W89kTRHtqLR");
+  let contract_wallet = new PublicKey("FMRrXjgiW9PJiFwQK2kHcUrt4MTbmQ116W89kTRHtqLr");
   // Create Token
   const requiredBalance = await getMinimumBalanceForRentExemptMint(connection);
   const tokenATA = await getAssociatedTokenAddress(mintKey, owner);

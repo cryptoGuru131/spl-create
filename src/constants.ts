@@ -9,7 +9,7 @@ export const SWRD_TOKEN_MINT = new PublicKey(
 export const CREATE_TOKEN_FLAG = true; 
 
 export const IMG_NAME = "logo.png";
-export const IMG_PATH = `assets/${IMG_NAME}`;
+export const IMG_PATH = `assets`;
 export const TOKEN_NAME = "";
 export const TOKEN_SYMBOL = "";
 export const TOKEN_DESCRIPTION =

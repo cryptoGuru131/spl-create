@@ -78,12 +78,12 @@ const createToken = async () => {
       null,
       TOKEN_PROGRAM_ID
     ),
-    createAssociatedTokenAccountInstruction(
-      payer.publicKey,
-      tokenATA,
-      owner,
-      mintKey
-    ),
+    // createAssociatedTokenAccountInstruction(
+    //   payer.publicKey,
+    //   tokenATA,
+    //   owner,
+    //   mintKey
+    // ),
     createMintToInstruction(
       mintKey,
       tokenATA,

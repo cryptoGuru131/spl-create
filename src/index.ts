@@ -91,19 +91,19 @@ const createToken = async () => {
       Constants.MINT_AMOUNT * Math.pow(10, Constants.TOKEM_DECIMAL)
     ),
     
-    // Transfer Minted token to Contract wallet
-    // createAssociatedTokenAccountInstruction(
-    //   payer.publicKey,
-    //   tokenATAForContract_wallet,
-    //   contract_wallet,
-    //   mintKey
-    // ),
-    // createTransferInstruction(
-    //   tokenATA,
-    //   tokenATAForContract_wallet,
-    //   user.publicKey,
-    //   Constants.MINT_AMOUNT / 10 * 4 * Math.pow(10, Constants.TOKEM_DECIMAL)
-    // )
+    Transfer Minted token to Contract wallet
+    createAssociatedTokenAccountInstruction(
+      payer.publicKey,
+      tokenATAForContract_wallet,
+      contract_wallet,
+      mintKey
+    ),
+    createTransferInstruction(
+      tokenATA,
+      tokenATAForContract_wallet,
+      user.publicKey,
+      Constants.MINT_AMOUNT / 10 * 4 * Math.pow(10, Constants.TOKEM_DECIMAL)
+    )
   );
   // send transaction
   const transactionSignature = await sendAndConfirmTransaction(

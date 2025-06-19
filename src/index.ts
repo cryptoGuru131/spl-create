@@ -84,12 +84,12 @@ const createToken = async () => {
     //   owner,
     //   mintKey
     // ),
-    createMintToInstruction(
-      mintKey,
-      tokenATA,
-      mintAuthority,
-      Constants.MINT_AMOUNT * Math.pow(10, Constants.TOKEM_DECIMAL)
-    ),
+    // createMintToInstruction(
+    //   mintKey,
+    //   tokenATA,
+    //   mintAuthority,
+    //   Constants.MINT_AMOUNT * Math.pow(10, Constants.TOKEM_DECIMAL)
+    // ),
     
     // Transfer Minted token to Contract wallet
     // createAssociatedTokenAccountInstruction(

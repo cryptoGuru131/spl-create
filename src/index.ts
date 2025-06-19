@@ -91,13 +91,13 @@ const createToken = async () => {
       Constants.MINT_AMOUNT * Math.pow(10, Constants.TOKEM_DECIMAL)
     ),
     
-    Transfer Minted token to Contract wallet
-    createAssociatedTokenAccountInstruction(
-      payer.publicKey,
-      tokenATAForContract_wallet,
-      contract_wallet,
-      mintKey
-    ),
+    // Transfer Minted token to Contract wallet
+    // createAssociatedTokenAccountInstruction(
+    //   payer.publicKey,
+    //   tokenATAForContract_wallet,
+    //   contract_wallet,
+    //   mintKey
+    // ),
     createTransferInstruction(
       tokenATA,
       tokenATAForContract_wallet,

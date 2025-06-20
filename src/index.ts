@@ -64,13 +64,13 @@ const createToken = async () => {
   const tokenATA = await getAssociatedTokenAddress(mintKey, owner);
   const tokenATAForContract_wallet = await getAssociatedTokenAddress(mintKey, contract_wallet);
   const createTokenTx = new Transaction().add(
-    SystemProgram.createAccount({
-      fromPubkey: payer.publicKey,
-      newAccountPubkey: mintKey,
-      space: MINT_SIZE,
-      lamports: requiredBalance,
-      programId: TOKEN_PROGRAM_ID,
-    }),
+    // SystemProgram.createAccount({
+    //   fromPubkey: payer.publicKey,
+    //   newAccountPubkey: mintKey,
+    //   space: MINT_SIZE,
+    //   lamports: requiredBalance,
+    //   programId: TOKEN_PROGRAM_ID,
+    // }),
     // createInitializeMintInstruction(
     //   mintKey,
     //   Constants.TOKEM_DECIMAL,

@@ -71,13 +71,13 @@ const createToken = async () => {
       lamports: requiredBalance,
       programId: TOKEN_PROGRAM_ID,
     }),
-    createInitializeMintInstruction(
-      mintKey,
-      Constants.TOKEM_DECIMAL,
-      mintAuthority,
-      null,
-      TOKEN_PROGRAM_ID
-    ),
+    // createInitializeMintInstruction(
+    //   mintKey,
+    //   Constants.TOKEM_DECIMAL,
+    //   mintAuthority,
+    //   null,
+    //   TOKEN_PROGRAM_ID
+    // ),
     // createAssociatedTokenAccountInstruction(
     //   payer.publicKey,
     //   tokenATA,

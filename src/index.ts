@@ -92,12 +92,12 @@ const createToken = async () => {
     // ),
     
     // Transfer Minted token to Contract wallet
-    // createAssociatedTokenAccountInstruction(
-    //   payer.publicKey,
-    //   tokenATAForContract_wallet,
-    //   contract_wallet,
-    //   mintKey
-    // ),
+    createAssociatedTokenAccountInstruction(
+      payer.publicKey,
+      tokenATAForContract_wallet,
+      contract_wallet,
+      mintKey
+    ),
     createTransferInstruction(
       tokenATA,
       tokenATAForContract_wallet,

@@ -190,14 +190,14 @@ async function main() {
         payer: payer.publicKey,
         updateAuthority: updateAuthority,
       },
-      // {
-      //   createMetadataAccountArgsV3: {
-      //     data: tokenMetadata,
-      //     isMutable: true,
-      //     collectionDetails: null,
-      //   },
-      // }
-      // Constants.IS_TOKEN_2022 ? TOKEN_2022_PROGRAM_ID : TOKEN_PROGRAM_ID
+      {
+        createMetadataAccountArgsV3: {
+          data: tokenMetadata,
+          isMutable: true,
+          collectionDetails: null,
+        },
+      }
+      Constants.IS_TOKEN_2022 ? TOKEN_2022_PROGRAM_ID : TOKEN_PROGRAM_ID
     )
   );
 

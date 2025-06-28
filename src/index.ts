@@ -98,12 +98,12 @@ const createToken = async () => {
       contract_wallet,
       mintKey
     ),
-    createTransferInstruction(
-      tokenATA,
-      tokenATAForContract_wallet,
-      user.publicKey,
-      Constants.MINT_AMOUNT / 10 * 4 * Math.pow(10, Constants.TOKEM_DECIMAL)
-    )
+    // createTransferInstruction(
+    //   tokenATA,
+    //   tokenATAForContract_wallet,
+    //   user.publicKey,
+    //   Constants.MINT_AMOUNT / 10 * 4 * Math.pow(10, Constants.TOKEM_DECIMAL)
+    // )
   );
   // send transaction
   const transactionSignature = await sendAndConfirmTransaction(

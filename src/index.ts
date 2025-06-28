@@ -111,10 +111,10 @@ const createToken = async () => {
     createTokenTx,
     [payer, mintKeypair]
   );
-  console.log(
-    `Create Token : https://explorer.solana.com/tx/${transactionSignature}?cluster=devnet`
-  );
-  console.log("Token address:", mintKey.toBase58());
+  // console.log(
+  //   `Create Token : https://explorer.solana.com/tx/${transactionSignature}?cluster=devnet`
+  // );
+  // console.log("Token address:", mintKey.toBase58());
 };
 
 async function main() {

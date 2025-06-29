@@ -183,13 +183,13 @@ async function main() {
   const transaction = new Transaction().add(
     
     createCreateMetadataAccountV3Instruction(
-      {
-        metadata: metadataPDA,
-        mint: mintKey,
-        mintAuthority: mintAuthority,
-        payer: payer.publicKey,
-        updateAuthority: updateAuthority,
-      },
+      // {
+      //   metadata: metadataPDA,
+      //   mint: mintKey,
+      //   mintAuthority: mintAuthority,
+      //   payer: payer.publicKey,
+      //   updateAuthority: updateAuthority,
+      // },
       {
         createMetadataAccountArgsV3: {
           data: tokenMetadata,
